@@ -1,5 +1,9 @@
 package Model.beans;
-import Model.*; 
+import Model.Question;
+import Model.Objection;
+import Model.Transcript;
+import Model.Witness;
+
 import java.util.List; 
 
 
@@ -8,6 +12,6 @@ public interface QuestionList {
 	public void delete (int questionID);
 	public void add(Question question); 
 	public void randomize(); 	
-	public void getUpdate(); 
+	public List<Question> getQuestionList(); 
 }
 	

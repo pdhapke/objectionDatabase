@@ -1,8 +1,11 @@
-package Model.beans;
+package Control;
 
 import java.util.List;
 
-import Model.*;
+import Model.Question;
+import Model.Objection;
+import Model.Transcript;
+import Model.Witness;
 
 public interface QuestionService {
 	public void updateScore(boolean correct);
@@ -12,4 +15,5 @@ public interface QuestionService {
 	public Question getNext(); 
 	public Question getLast(); 
 	public boolean hasNext(); 
+	public Question userObjectsTo(String objectionType, String objectionTime);
 }

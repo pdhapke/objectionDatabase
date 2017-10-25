@@ -1,6 +1,10 @@
 package Model.beans;
 
-import Model.*;
+import Model.Question;
+import Model.Objection;
+import Model.Transcript;
+import Model.Witness;
+import java.util.Collections;
 import java.util.List; 
 
 public class QuestionListBean implements QuestionList{
@@ -31,12 +35,12 @@ public class QuestionListBean implements QuestionList{
 
 	public void randomize() {
 		// TODO Auto-generated method stub
-		
+		Collections.shuffle(list);
+	}
+	
+	public List<Question> getQuestionList() {
+		return list;
 	}
 
-	public void getUpdate() {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
 }
