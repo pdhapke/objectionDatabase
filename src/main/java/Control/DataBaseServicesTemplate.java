@@ -19,6 +19,9 @@ public interface DataBaseServicesTemplate {
 	//Update
 	public boolean updateQuestion(Question q); 
 	public boolean updateQuestion(Gson gson); 
+	Gson gson = new Gson();
+ABCClass c1 = gson.fromJson(data, ABCClass.class);
+	
 	//Delete
 	public boolean deleteQuestion(Question q); 
 	public boolean deleteQuestion(int questionID); 
