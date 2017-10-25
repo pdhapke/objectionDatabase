@@ -7,6 +7,7 @@ import Model.databaseInformation;
 import java.util.List; 
 
 public interface GetQuestionsFromDataBaseTemplate {
-	public List<Question> getQuestions(); 
-	public Question getQuestion(); 
+	//read
+	public List<Question> getQuestions(String type, int numberOfQuestions); 
+	public Question getQuestion(String type);
 	}
