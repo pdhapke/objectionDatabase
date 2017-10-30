@@ -14,7 +14,10 @@ context VARCHAR(255) NOT NULL
 --this will create the witness table
 --primary key is the witness_ID, foregin key is case_ID. 
 --one to many relationship with questions
-
+CREATE TABLE witness (
+  first_name VARCHAR2()
+  
+  )
 
 
 
